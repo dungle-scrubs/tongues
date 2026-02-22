@@ -12,6 +12,8 @@ node_modules
 
 coverage
 dist
+.generated-images/
+assets/.drafts/
 
 # Local agent configs (do not publish)
 .tallow/
