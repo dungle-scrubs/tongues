@@ -1,0 +1,22 @@
+node_modules
+
+.DS_Store
+*.log
+*.swp
+*~
+
+.env
+.env.local
+.env.*
+!.env.example
+
+coverage
+dist
+
+# Local agent configs (do not publish)
+.tallow/
+.claude/
+.codex/
+.pi/
+AGENTS.md
+CLAUDE.md

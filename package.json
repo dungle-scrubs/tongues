@@ -1,0 +1,64 @@
+{
+	"name": "@dungle-scrubs/tongues-image",
+	"version": "0.1.0",
+	"private": false,
+	"description": "Bun CLI to recreate images with translated text or extract+translate text.",
+	"type": "module",
+	"bin": {
+		"tongues-image": "./src/cli.js"
+	},
+	"files": [
+		"src",
+		"README.md",
+		"LICENSE"
+	],
+	"keywords": [
+		"image",
+		"translation",
+		"ocr",
+		"gemini",
+		"cli",
+		"bun"
+	],
+	"author": "Kevin Frilot",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dungle-scrubs/tongues-image.git"
+	},
+	"bugs": {
+		"url": "https://github.com/dungle-scrubs/tongues-image/issues"
+	},
+	"homepage": "https://github.com/dungle-scrubs/tongues-image#readme",
+	"publishConfig": {
+		"access": "public"
+	},
+	"engines": {
+		"bun": ">=1.2.0",
+		"node": ">=22.0.0"
+	},
+	"scripts": {
+		"start": "bun src/cli.js",
+		"check": "bun run format:check && bun run lint && bun run typecheck && bun test",
+		"test": "bun test",
+		"format": "biome format --write .",
+		"format:check": "biome check --formatter-enabled=true --linter-enabled=false .",
+		"lint": "biome lint .",
+		"typecheck": "tsc -p tsconfig.json --noEmit",
+		"prepare": "husky",
+		"prepublishOnly": "bun run check"
+	},
+	"dependencies": {
+		"@google/genai": "^1.42.0",
+		"commander": "^14.0.3"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.4",
+		"bun-types": "^1.3.9",
+		"husky": "^9.1.7",
+		"typescript": "^5.9.3"
+	},
+	"overrides": {
+		"minimatch": "^10.2.1"
+	}
+}
