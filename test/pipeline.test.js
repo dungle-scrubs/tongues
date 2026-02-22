@@ -73,7 +73,7 @@ async function createTempImage(
 	name = "input.png",
 	base64 = ONE_PIXEL_PNG_BASE64,
 ) {
-	const dir = await mkdtemp(path.join(tmpdir(), "tongues-image-"));
+	const dir = await mkdtemp(path.join(tmpdir(), "tongues-"));
 	createdDirs.push(dir);
 	const filePath = path.join(dir, name);
 	await writeFile(filePath, Buffer.from(base64, "base64"));

@@ -1,4 +1,4 @@
-# tongues-image
+# tongues
 
 CLI for translating non-English text inside images.
 
@@ -26,7 +26,7 @@ It supports two operations:
 ### From npm
 
 ```bash
-npm install -g @dungle-scrubs/tongues-image
+npm install -g @dungle-scrubs/tongues
 ```
 
 ### From source
@@ -45,13 +45,13 @@ export GEMINI_API_KEY="your-api-key"
 
 ```bash
 # Recreate image with translated text (writes *_translated.ext by default)
-tongues-image ./input.jpg
+tongues ./input.jpg
 
 # Recreate image with explicit output file
-tongues-image ./input.jpg --output ./output.jpg --output-lang english
+tongues ./input.jpg --output ./output.jpg --output-lang english
 
 # Extract and translate text only
-tongues-image ./input.jpg --extract
+tongues ./input.jpg --extract
 ```
 
 ### Options

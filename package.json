@@ -1,11 +1,11 @@
 {
-	"name": "@dungle-scrubs/tongues-image",
+	"name": "@dungle-scrubs/tongues",
 	"version": "0.1.1",
 	"private": false,
 	"description": "Bun CLI to recreate images with translated text or extract+translate text.",
 	"type": "module",
 	"bin": {
-		"tongues-image": "./src/cli.js"
+		"tongues": "./src/cli.js"
 	},
 	"files": [
 		"src",
@@ -24,12 +24,12 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/dungle-scrubs/tongues-image.git"
+		"url": "git+https://github.com/dungle-scrubs/tongues.git"
 	},
 	"bugs": {
-		"url": "https://github.com/dungle-scrubs/tongues-image/issues"
+		"url": "https://github.com/dungle-scrubs/tongues/issues"
 	},
-	"homepage": "https://github.com/dungle-scrubs/tongues-image#readme",
+	"homepage": "https://github.com/dungle-scrubs/tongues#readme",
 	"publishConfig": {
 		"access": "public"
 	},

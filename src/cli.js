@@ -37,7 +37,7 @@ export function createProgram(
 	const program = new Command();
 
 	program
-		.name("tongues-image")
+		.name("tongues")
 		.description(
 			"Recreate images with translated text, or extract text and translate without rendering.",
 		)
@@ -71,9 +71,9 @@ export function createProgram(
 			[
 				"",
 				"Examples:",
-				"  tongues-image ./menu-jp.png",
-				"  tongues-image ./menu-jp.png --output ./menu-en.png --output-lang english",
-				"  tongues-image ./menu-jp.png --extract --input-lang auto --output-lang english",
+				"  tongues ./menu-jp.png",
+				"  tongues ./menu-jp.png --output ./menu-en.png --output-lang english",
+				"  tongues ./menu-jp.png --extract --input-lang auto --output-lang english",
 			].join("\n"),
 		)
 		.action((inputPath, options) => runCommand(inputPath, options, handlers));

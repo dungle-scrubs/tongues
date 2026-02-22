@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "tongues-image",
+      "name": "@dungle-scrubs/tongues",
       "dependencies": {
         "@google/genai": "^1.42.0",
         "commander": "^14.0.3",
