@@ -1,6 +1,6 @@
 {
 	"name": "@dungle-scrubs/tongues-image",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"private": false,
 	"description": "Bun CLI to recreate images with translated text or extract+translate text.",
 	"type": "module",
