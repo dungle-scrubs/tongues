@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an improvement for tongues-image
+about: Suggest an improvement for tongues
 title: "feat: "
 labels: enhancement
 assignees: ""

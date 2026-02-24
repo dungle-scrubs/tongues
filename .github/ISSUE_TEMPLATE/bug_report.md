@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Report incorrect behavior in tongues-image
+about: Report incorrect behavior in tongues
 title: "bug: "
 labels: bug
 assignees: ""
